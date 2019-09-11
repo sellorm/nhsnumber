@@ -1,0 +1,22 @@
+context("Checks correct output")
+test_that("Test for correct checksums", {
+  expect_equal(get_checksum(123456788), 1)
+  expect_equal(get_checksum(987654321), 0)
+  expect_equal(get_checksum(234567890), 9)
+  expect_equal(get_checksum(345678901), 7)
+  expect_equal(get_checksum(456789012), 4)
+  expect_equal(get_checksum(567890123), 0)
+  expect_equal(get_checksum(678901234), 6)
+  expect_equal(get_checksum(789012345), 0)
+  expect_equal(get_checksum(890123456), 4)
+  expect_equal(get_checksum(901234567), 7)
+  expect_equal(get_checksum("012345678"), 9)
+})
+
+context("Checks for errors")
+test_that("Test for errors in correct places", {
+  expect_error(get_checksum(12345))
+  expect_error(get_checksum(123456789))
+  expect_error(get_checksum("hatstand"))
+  expect_error(get_checksum("hatstands"))
+})
