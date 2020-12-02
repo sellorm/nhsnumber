@@ -16,7 +16,7 @@ Either the calculated checksum or the complete 10 digit NHS number including the
 }
 \description{
 NHS numbers are 10 digit numbers where the 10th digit is a checksum.
-This function takes the 9 core digits of the NHS number and calculates the checksums..
+This function takes the 9 core digits of the NHS number and calculates the checksums.
 }
 \details{
 This function has been created using information from:

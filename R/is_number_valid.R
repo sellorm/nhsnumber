@@ -12,7 +12,7 @@
 is_number_valid <- function(nhs_number, warn=TRUE) {
   if ( nchar(nhs_number) != 10 ){
     if ( warn == TRUE ){
-    warning("NHS Number is incorrect length - should be 10 digits")
+    warning("nhs_number is incorrect length - should be 10 digits")
     }
   }
   no_checksum <- substr(nhs_number, 1, 9)

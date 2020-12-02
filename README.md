@@ -13,11 +13,11 @@ NHS numbers are issued to patients of the NHS in the UK.
 
 The number consists of 9 digits and a single digit checksum.
 
-For more information, please see the [NHS number wikipedia article](https://en.wikipedia.org/wiki/NHS_number) on the subject.
+For more information, please see the [NHS number Wikipedia article](https://en.wikipedia.org/wiki/NHS_number) on the subject.
 
 ## Installation
 
-You can install the released version of nhsnumber from [Github](https://github.com/sellorm/nhsnumber) with:
+You can install the released version of nhsnumber from [GitHub](https://github.com/sellorm/nhsnumber) with:
 
 ``` r
 devtools::install_github("sellorm/nhsnumber")
