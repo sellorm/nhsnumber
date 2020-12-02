@@ -10,5 +10,5 @@
 * This is a new release.
 
 The note relates to some potential spelling errors in the description. It appears
-the the automated spell checker does not know the words "checksum" or "checksums"
-and "NHS" is understandable not in the dictionary either.
+that the automated spell checker does not know the word "checksums" and "NHS" is
+understandably not in the dictionary either.
