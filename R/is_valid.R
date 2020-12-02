@@ -13,7 +13,7 @@
 
 is_valid <- function(nhs_number, warn = TRUE) {
   if ( ! is.vector(nhs_number)){
-    stop("NHS number must be a vector")
+    stop("nhs_number must be a vector")
   }
   unlist(lapply(nhs_number, function(x) {
     is_number_valid(x, warn = warn)

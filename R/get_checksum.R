@@ -1,7 +1,7 @@
 #' Calculates NHS number checksums
 #'
 #' NHS numbers are 10 digit numbers where the 10th digit is a checksum.
-#' This function takes the 9 core digits of the NHS number and calculates the checksums of.
+#' This function takes the 9 core digits of the NHS number and calculates the checksums.
 #'
 #' This function has been created using information from:
 #' https://en.wikipedia.org/wiki/NHS_number
@@ -16,8 +16,17 @@
 #' @export
 
 get_checksum <- function(nhs_number, full_output = FALSE) {
+  if ( is.na(
+    suppressWarnings(
+      as.numeric(nhs_number)
+      )
+    )
+    ){
+    stop("nhs_number is invalid -
+         should be a 9 digit number, not text")
+  }
   if ( nchar(nhs_number) != 9 ){
-    stop("NHS Number is incorrect length -
+    stop("nhs_number is incorrect length -
          should be 9 digits as checksum is not required")
   }
   split_number <- as.numeric(strsplit(as.character(nhs_number), "")[[1]])

@@ -1,9 +1,9 @@
 Package: nhsnumber
 Type: Package
 Title: Tools For Working With NHS Number Checksums  
-Version: 0.1.0.9000
+Version: 0.1.1
 Authors@R: c(
-    person("Mark", "Sellors", , "rstuff@5vcc.com", c("aut", "cre"))
+    person("Mark", "Sellors", , "rstuff@5vcc.com", c("aut", "cre", "cph"))
     )
 Description: Provides functions for working with NHS number checksums.
     Numbers can be validated and checksums created.
@@ -13,6 +13,6 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 Suggests: 
     testthat (>= 2.1.0)
