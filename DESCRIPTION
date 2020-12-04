@@ -6,6 +6,9 @@ Authors@R: c(
     person("Mark", "Sellors", , "rstuff@5vcc.com", c("aut", "cre", "cph"))
     )
 Description: Provides functions for working with NHS number checksums.
+    The UK's National Health Service issues NHS numbers to all users of its
+    services and this package implements functions for verifying that the
+    numbers are valid according to the checksum scheme the NHS use.
     Numbers can be validated and checksums created.
 URL: https://github.com/sellorm/nhsnumber
 BugReports: https://github.com/sellorm/nhsnumber/issues

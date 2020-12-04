@@ -5,6 +5,7 @@
 #'
 #' @param nhs_number A vector of 10 digit NHS numbers to validate
 #' @param warn Boolean that controls display of warning messages
+#' @return A logical vector indicating the validity of each input value
 #' @examples
 #' is_valid(1234567881)
 #' is_valid(c(1234567881, 1234512345, 123456789))

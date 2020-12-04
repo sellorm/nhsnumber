@@ -1,3 +1,9 @@
+## Resubmission
+This is a resubmission. In this version I have:
+
+* Added an explanation for NHS in the description
+* Fixed missing rd tags in is_valid.Rd - added \value
+
 ## Test environments
 * local R installation, R 4.0.2
 * ubuntu 16.04 (on travis-ci), R 4.0.2

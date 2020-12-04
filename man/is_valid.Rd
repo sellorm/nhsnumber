@@ -11,6 +11,9 @@ is_valid(nhs_number, warn = TRUE)
 
 \item{warn}{Boolean that controls display of warning messages}
 }
+\value{
+A logical vector indicating the validity of each input value
+}
 \description{
 NHS numbers are 10 digit numbers where the 10th digit is a checksum.
 This function validates the checksums of the supplied NHS numbers.
