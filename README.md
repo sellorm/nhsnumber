@@ -3,6 +3,7 @@
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/nhsnumber)](https://CRAN.R-project.org/package=nhsnumber)
 <!-- badges: end -->
 
 The goal of nhsnumber is to provide some simple functions for working with NHS numbers in R.
