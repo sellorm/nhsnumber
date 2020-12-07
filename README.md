@@ -4,6 +4,7 @@
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/nhsnumber)](https://CRAN.R-project.org/package=nhsnumber)
 [![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+![R-CMD-check](https://github.com/sellorm/nhsnumber/workflows/R-CMD-check/badge.svg)
 <!-- badges: end -->
 
 The goal of nhsnumber is to provide some simple functions for working with NHS numbers in R.
