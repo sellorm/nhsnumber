@@ -11,6 +11,7 @@ test_that("Test for correct checksums", {
   expect_equal(get_checksum(890123456), 4)
   expect_equal(get_checksum(901234567), 7)
   expect_equal(get_checksum("012345678"), 9)
+  expect_equal(get_checksum(123456788, full_output = TRUE), 1234567881)
 })
 
 context("Checks for errors")

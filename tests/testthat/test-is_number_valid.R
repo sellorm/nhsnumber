@@ -11,4 +11,5 @@ test_that("Incorrect input still provides the expected output", {
   expect_equal(is_number_valid(12345, warn = FALSE), FALSE)
   expect_equal(is_number_valid("hat", warn = FALSE), FALSE)
   expect_equal(is_number_valid(12345678901, warn = FALSE), FALSE)
+  expect_warning(is_number_valid(1))
 })
