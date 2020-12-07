@@ -19,7 +19,13 @@ For more information, please see the [NHS number Wikipedia article](https://en.w
 
 ## Installation
 
-You can install the released version of nhsnumber from [GitHub](https://github.com/sellorm/nhsnumber) with:
+You can install the released version of nhsnumber from [CRAN](https://cran.r-project.org/package=nhsnumber) with:
+
+``` r
+install.packages("nhsnumber")
+```
+
+You can install the development version of nhsnumber from [GitHub](https://github.com/sellorm/nhsnumber) with:
 
 ``` r
 devtools::install_github("sellorm/nhsnumber")
