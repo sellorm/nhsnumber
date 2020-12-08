@@ -1,7 +1,7 @@
 Package: nhsnumber
 Type: Package
 Title: Tools for Working with NHS Number Checksums  
-Version: 0.1.1
+Version: 0.1.1.9000
 Authors@R: c(
     person("Mark", "Sellors", , "rstuff@5vcc.com", c("aut", "cre", "cph"))
     )
