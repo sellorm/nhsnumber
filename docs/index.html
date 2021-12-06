@@ -23,6 +23,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -35,18 +37,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">nhsnumber</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.2</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
@@ -56,8 +52,8 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/sellorm/nhsnumber/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/sellorm/nhsnumber/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -73,35 +69,35 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="nhsnumber" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#nhsnumber" class="anchor"></a>nhsnumber</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="nhsnumber">nhsnumber<a class="anchor" aria-label="anchor" href="#nhsnumber"></a>
+</h1></div>
 <!-- badges: start -->
 
 <p>The goal of nhsnumber is to provide some simple functions for working with NHS numbers in R.</p>
-<div id="nhs-number-overview" class="section level2">
-<h2 class="hasAnchor">
-<a href="#nhs-number-overview" class="anchor"></a>NHS Number Overview</h2>
+<div class="section level2">
+<h2 id="nhs-number-overview">NHS Number Overview<a class="anchor" aria-label="anchor" href="#nhs-number-overview"></a>
+</h2>
 <p>NHS numbers are issued to patients of the NHS in the UK.</p>
 <p>The number consists of 9 digits and a single digit checksum.</p>
-<p>For more information, please see the <a href="https://en.wikipedia.org/wiki/NHS_number">NHS number Wikipedia article</a> on the subject.</p>
+<p>For more information, please see the <a href="https://en.wikipedia.org/wiki/NHS_number" class="external-link">NHS number Wikipedia article</a> on the subject.</p>
 </div>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the released version of nhsnumber from <a href="https://cran.r-project.org/package=nhsnumber">CRAN</a> with:</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>You can install the released version of nhsnumber from <a href="https://cran.r-project.org/package=nhsnumber" class="external-link">CRAN</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"nhsnumber"</span><span class="op">)</span></code></pre></div>
-<p>You can install the development version of nhsnumber from <a href="https://github.com/sellorm/nhsnumber">GitHub</a> with:</p>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"nhsnumber"</span><span class="op">)</span></code></pre></div>
+<p>You can install the development version of nhsnumber from <a href="https://github.com/sellorm/nhsnumber" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"sellorm/nhsnumber"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"sellorm/nhsnumber"</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="example" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example</h2>
+<div class="section level2">
+<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+</h2>
 <p>The <code>is_valid</code> function takes a vector of NHS numbers and returns TRUE or FALSE depending on whether the checksum is successfully validated.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">9876543210</span>, <span class="fl">1234567890</span>, <span class="fl">1234567881</span><span class="op">)</span>
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">9876543210</span>, <span class="fl">1234567890</span>, <span class="fl">1234567881</span><span class="op">)</span>
 <span class="fu">nhsnumber</span><span class="fu">::</span><span class="fu"><a href="reference/is_valid.html">is_valid</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></code></pre></div>
 <p>Which returns:</p>
 <pre><code>TRUE FALSE  TRUE</code></pre>
@@ -109,12 +105,12 @@
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">nhsnumber</span><span class="fu">::</span><span class="fu"><a href="reference/get_checksum.html">get_checksum</a></span><span class="op">(</span><span class="fl">123456788</span><span class="op">)</span></code></pre></div>
 <p>which returns:</p>
-<pre><code>1</code></pre>
+<pre><code><span class="fl">1</span></code></pre>
 <p>or with the full output:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">nhsnumber</span><span class="fu">::</span><span class="fu"><a href="reference/get_checksum.html">get_checksum</a></span><span class="op">(</span><span class="fl">123456788</span>, full_output <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
 <p>Which returns:</p>
-<pre><code>1234567881</code></pre>
+<pre><code><span class="fl">1234567881</span></code></pre>
 <p>Some number combinations are invalid and these will throw an error, for example:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">nhsnumber</span><span class="fu">::</span><span class="fu"><a href="reference/get_checksum.html">get_checksum</a></span><span class="op">(</span><span class="fl">123456789</span><span class="op">)</span></code></pre></div>
@@ -127,49 +123,59 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=nhsnumber">https://​cloud.r-project.org/​package=nhsnumber</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/sellorm/nhsnumber/">https://​github.com/​sellorm/​nhsnumber/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/sellorm/nhsnumber/issues">https://​github.com/​sellorm/​nhsnumber/​issues</a>
-</li>
+<li><a href="https://cloud.r-project.org/package=nhsnumber" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/sellorm/nhsnumber/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/sellorm/nhsnumber/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing nhsnumber</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Mark Sellors <br><small class="roles"> Author, maintainer, copyright holder </small>  </li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://CRAN.R-project.org/package=nhsnumber"><img src="https://www.r-pkg.org/badges/version/nhsnumber" alt="CRAN status"></a></li>
-<li><a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="Lifecycle: maturing"></a></li>
-<li><a href="https://github.com/sellorm/nhsnumber/actions?query=workflow%3AR-CMD-check"><img src="https://github.com/sellorm/nhsnumber/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://codecov.io/gh/sellorm/nhsnumber"><img src="https://codecov.io/gh/sellorm/nhsnumber/branch/master/graph/badge.svg?token=UUKS3SYQ0B" alt="codecov"></a></li>
+<li><a href="https://CRAN.R-project.org/package=nhsnumber" class="external-link"><img src="https://www.r-pkg.org/badges/version/nhsnumber" alt="CRAN status"></a></li>
+<li><a href="https://www.tidyverse.org/lifecycle/#maturing" class="external-link"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="Lifecycle: maturing"></a></li>
+<li><a href="https://github.com/sellorm/nhsnumber/actions?query=workflow%3AR-CMD-check" class="external-link"><img src="https://github.com/sellorm/nhsnumber/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://codecov.io/gh/sellorm/nhsnumber" class="external-link"><img src="https://codecov.io/gh/sellorm/nhsnumber/branch/master/graph/badge.svg?token=UUKS3SYQ0B" alt="codecov"></a></li>
 </ul>
 </div>
-</div>
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Mark Sellors.</p>
+  <p></p>
+<p>Developed by Mark Sellors.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -177,6 +183,8 @@
 
   
 
+
+  
 
   </body>
 </html>
