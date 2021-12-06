@@ -11,7 +11,7 @@
 is_number_valid <- function(nhs_number, warn = TRUE) {
   if (is.na(nhs_number)) {
     if (warn == TRUE) {
-      warning("nhs_number is 'NA'")
+      warning("nhs_number contains 'NA', corresponding result will be FALSE")
     }
     return(FALSE)
   }
