@@ -20,8 +20,8 @@ get_checksum <- function(nhs_number, full_output = FALSE) {
   if (is.na(
     suppressWarnings(
       as.numeric(nhs_number)
-      )
     )
+  )
   ) {
     stop("nhs_number is invalid -
          should be a 9 digit number, not text")

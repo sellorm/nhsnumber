@@ -8,20 +8,31 @@
 #' @examples
 #' is_valid(1234567881)
 #' is_valid(1234567890, warn = FALSE)
+is_number_valid <- function(nhs_number, warn = TRUE) {
+  if (is.na(nhs_number)) {
+    if (warn == TRUE) {
+      warning("nhs_number contains 'NA', corresponding result will be FALSE")
+    }
+    return(FALSE)
+  }
 
-is_number_valid <- function(nhs_number, warn=TRUE) {
   if (nchar(nhs_number) != 10) {
     if (warn == TRUE) {
-    warning("nhs_number is incorrect length - should be 10 digits")
+      warning("nhs_number is incorrect length - should be 10 digits")
     }
   }
+
   no_checksum <- substr(nhs_number, 1, 9)
   # returns FALSE if get_checksum throws an error
-  checksum <- tryCatch({
-    nhsnumber::get_checksum(no_checksum)
-  }, error = function(e) {
-    FALSE
-  })
+  checksum <- tryCatch(
+    {
+      nhsnumber::get_checksum(no_checksum)
+    },
+    error = function(e) {
+      FALSE
+    }
+  )
+
   if (checksum == substr(nhs_number, 10, 10)) {
     TRUE
   } else {
