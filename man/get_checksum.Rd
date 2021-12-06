@@ -12,11 +12,12 @@ get_checksum(nhs_number, full_output = FALSE)
 \item{full_output}{Boolean that controls display of warning messages}
 }
 \value{
-Either the calculated checksum or the complete 10 digit NHS number including the checksum.
+Checksum or the complete NHS number including the checksum.
 }
 \description{
 NHS numbers are 10 digit numbers where the 10th digit is a checksum.
-This function takes the 9 core digits of the NHS number and calculates the checksums.
+This function takes the 9 core digits of the NHS number and calculates the
+checksums.
 }
 \details{
 This function has been created using information from:

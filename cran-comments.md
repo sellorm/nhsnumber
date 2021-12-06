@@ -1,20 +1,16 @@
-## Resubmission
-This is a resubmission. In this version I have:
+## Test environment
 
-* Added an explanation for NHS in the description
-* Fixed missing rd tags in is_valid.Rd - added \value
-
-## Test environments
-* local R installation, R 4.0.2
-* ubuntu 16.04 (on travis-ci), R 4.0.2
-* win-builder (devel)
+* MacOS 12.0.1 (x86) with R 4.1.2
+* Windows Server 2008 R2 SP1, R-devel, 32/64 bit
+* Ubuntu Linux 20.04.1 LTS, R-release, GCC
+* Fedora Linux, R-devel, clang, gfortran
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
+0 errors | 0 warnings | 1 notes
 
-* This is a new release.
+* This is an update to an existing release.
 
-The note relates to some potential spelling errors in the description. It appears
-that the automated spell checker does not know the word "checksums" and "NHS" is
-understandably not in the dictionary either.
+The note relates to a change in the maintainer email address. I have two 
+packages on CRAN, this one and `rlog`, both using a different valid email
+address. This change consolidates my CRAN presence into a single email address.
