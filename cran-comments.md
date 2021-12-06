@@ -1,3 +1,7 @@
+## Resubmission
+
+* Fixes URL redirects as requested.
+
 ## Test environment
 
 * MacOS 12.0.1 (x86) with R 4.1.2
